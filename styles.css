@@ -145,7 +145,7 @@
     margin: 20px 0;
   }
   
-  .card {
+  .cards {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -172,11 +172,41 @@
     gap: 30px;
     margin-top: 50px;
   }
-  
+ 
+  .chart_left_top {
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    height: 350px;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+  }
+  .charts_left_top_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .charts_left_top_title > div > h1 {
+    font-size: 24px;
+    color: #2e4a66;
+    margin-bottom: 5px;
+  }
+
+  .charts_left_top_title > i {
+    color: #ffffff;
+    font-size: 20px;
+    background: #ffc100;
+    border-radius: 200px 0px 200px 200px;
+    border: 0px solid #000000;
+    padding: 15px;
+  }
+
   .charts__left {
     padding: 25px;
     border-radius: 5px;
     background: #ffffff;
+    height: 350px;
     box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
   }
   
@@ -214,79 +244,10 @@
     align-items: center;
     justify-content: space-between;
   }
-  .chart-circle1 {
-      height: 50px;
-      width: 50px;
-      border-left: 4px solid transparent;
-      border-right: 4px solid #35a4ba;
-      border-bottom: 4px solid transparent;
-      border-top: 4px solid #35a4ba;
-      display: grid;
-      place-items: center;
-      margin: auto;
-      border-radius: 50%;
+  #chart-circle1 {
+    width: 300px;
+    margin: 0 auto;
   }
-  .chart-circle2 {
-    height: 50px;
-    width: 50px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-top: 4px solid #38e1b0;
-    display: grid;
-    place-items: center;
-    margin: auto;
-    border-radius: 50%;
-}
-.chart-circle3 {
-    height: 50px;
-    width: 50px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-bottom: 4px solid transparent;
-    border-top: 4px solid #3a3e41;
-    display: grid;
-    place-items: center;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.chart-circle4 {
-    height: 50px;
-    width: 50px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid #f65a6f;
-    border-bottom: 4px solid #f65a6f;
-    border-top: 4px solid #f65a6f;
-    display: grid;
-    place-items: center;
-    margin: auto;
-    border-radius: 50%;
-}
-.chart-circle5 {
-    height: 50px;
-    width: 50px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid #fa9357;
-    border-bottom: 4px solid #fa9357;
-    border-top: 4px solid #fa9357;
-    display: grid;
-    place-items: center;
-    margin: auto;
-    border-radius: 50%;
-}
-.chart-circle6 {
-    height: 50px;
-    width: 50px;
-    border-left: 4px solid transparent;
-    border-right: 4px solid #f0ed3f;
-    border-bottom: 4px solid transparent;
-    border-top: 4px solid #f0ed3f;
-    display: grid;
-    place-items: center;
-    margin: auto;
-    border-radius: 50%;
-}
 
   .charts__right__title > div > h1 {
     font-size: 24px;
@@ -335,8 +296,8 @@
   }
   
   .card3 {
-    background: #d6d8d9;
-    color: #3a3e41;
+    background: #faf5ac;
+    color: #f0d229;
     text-align: center;
     padding: 25px;
     border-radius: 5px;
@@ -353,8 +314,8 @@
   }
 
   .card5 {
-    background: #fad29d;
-    color: #fa9357;
+    background: #f7b2fd;
+    color: #c04ef5;
     text-align: center;
     padding: 25px;
     border-radius: 5px;
@@ -362,8 +323,8 @@
   }
 
   .card6 {
-    background: #faf5ac;
-    color: #f0ed3f;
+    background: #d6d8d9;
+    color: #3a3e41;
     text-align: center;
     padding: 25px;
     border-radius: 5px;
@@ -372,11 +333,10 @@
   
   
   #sidebar {
-    background: #020509;
+    background: #331b46;
     grid-area: sidebar;
     overflow-y: auto;
     padding: 20px;
-    -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
   
@@ -400,6 +360,7 @@
   }
   
   .sidebar__title > div > h1 {
+    margin-left: 15px;
     font-size: 18px;
     display: inline;
   }
@@ -410,7 +371,7 @@
   }
   
   .sidebar__menu > h2 {
-    color: #3ea175;
+    color: #af78c0;
     font-size: 16px;
     margin-top: 15px;
     margin-bottom: 5px;
@@ -426,12 +387,12 @@
   }
   
   .active_menu_link {
-    background: rgba(62, 161, 117, 0.3);
-    color: #3ea175;
+    background: rgba(199, 154, 230, 0.3);
+    color: #ac6fbb;
   }
   
   .active_menu_link a {
-    color: #3ea175 !important;
+    color: #925fa7 !important;
   }
   
   .sidebar__link > a {
@@ -491,19 +452,112 @@
     .nav_icon {
       display: inline;
     }
+    
   }
   
+  .card {
+    height: 240px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, .3);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 10px;
+  }
+  .imgg {
+    height: 130px;
+    border-radius: 10px;
+  }
+  .progress {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  /* .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#b095e7);
+    opacity: 1;
+} */
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+  .card_cont {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 5px;
+    background: #ffffff;
+    box-shadow: 5px 5px 13px #ededed, -5px -5px 13px #ffffff;
+  }
+  .card_cont_deep {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .card_cont h1 {
+    font-size: 24px;
+    color: #2e4a66;
+    margin-bottom: 5px;
+  }
+
+  .card_cont_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card_cont i {
+    color: #ffffff;
+    font-size: 20px;
+    background: #39447a;
+    border-radius: 200px 0px 200px 200px;
+    border: 0px solid #000000;
+    padding: 15px;
+  }
   @media only screen and (max-width: 855px) {
     .main__cards {
       grid-template-columns: 1fr;
       gap: 10px;
       margin-bottom: 0;
     }
-  
+    .chart_left_top {
+      margin-bottom: 30px;
+    }
     .charts {
       grid-template-columns: 1fr;
       margin-top: 30px;
     }
+    .card {
+      height: 200px;
+      max-width: 200px;
+    }
+
+  
+    .card_cont_deep {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 70px;
+      margin: 20px 0;
+    }
+    
   }
   
   @media only screen and (max-width: 480px) {
